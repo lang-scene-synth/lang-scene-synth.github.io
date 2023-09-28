@@ -1,2 +1,2 @@
-# lang-scene-synth.github.io
+# lang-scenes-synth.github.io
 Website

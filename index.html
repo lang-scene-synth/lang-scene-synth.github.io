@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Language-driven Scene Synthesis using Multi-conditional Diffusion Model">
+  <meta name="keywords" content="scene synthesis, diffusion model, generative model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="./static/images/lsdm_logo.jpeg"/>
+  <link rel="image_src" href="./static/images/lsdm_logo.jpeg">
+  <link rel="icon"
+        type="image/x-icon"
+        href="./static/images/lsdm_logo.ico"/>
+
+  <title>Language-driven Scene Synthesis using Multi-conditional Diffusion Model</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EDF010G6PN');
+
+
+  </script>
+
+  <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title">
+          Grasp-Anything: Large-scale Grasp Dataset from Foundation Models
+        </h1>
+        <!-- <br> -->
+        <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=CUpnG-YAAAAJ&hl=en&oi=ao">An Dinh Vuong</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+            <a href="https://scholar.google.com/citations?hl=th&user=qyExc4QAAAAJ&view_op=list_works">Minh Nhat Vu</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=PhqGEY8AAAAJ&hl=en&oi=sra">Toan Nguyen</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span><br>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=unbPvWAAAAAJ&hl=zh-CN">Baoru Huang</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=M7T55ooAAAAJ&hl=en&oi=sra">Dzung Nguyen</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com.vn/citations?user=UA_83MUAAAAJ&hl=vi">Thieu Vo</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>
+          <span class="author-block">
+            <a href="https://www.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a><sup>5</sup>
+          </span>
+        </div>
+        <br>
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><sup>1</sup>FPT Software AI Center</span>&nbsp;&nbsp;
+          <span class="author-block"><sup>2</sup>ACIN - TU Wien</span>&nbsp;&nbsp;
+          <span class="author-block"><sup>3</sup>Imperial College London</span>&nbsp;&nbsp;<br>
+          <span class="author-block"><sup>4</sup>Ton Duc Thang University</span>&nbsp;&nbsp;
+          <span class="author-block"><sup>5</sup>University of Liverpool</span>
+        </div>
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="https://github.com/andvg3/LSDM"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            <!-- Dataset Link. -->
+            <span class="link-block">
+              <a href="https://github.com/andvg3/LSDM"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="far fa-images"></i>
+                </span>
+                <span>Data</span>
+                </a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div id="wrapper"> 
+        <video id="teaser_4" autoplay controls muted loop playsinline width="100%" height="100%"> 
+            <source type="video/mp4" src="https://owncloud.tuwien.ac.at/index.php/s/Ul9vM69MWdLKNyJ/download" /> 
+        </video>
+        <div class="clear"></div> 
+      </div>
+      <h2 class="subtitle has-text-centered">
+        We introduce <i>Language-driven Scene Synthesis</i> task, which involves the leverage of human-input text prompts to generate physically plausible and semantically reasonable objects.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Scene synthesis is a challenging problem with several industrial applications. Recently, substantial efforts have been directed to synthesize the scene using human motions, room layouts, or spatial graphs as the input. However, few studies have addressed this problem from multiple modalities, especially combing text prompts. In this paper, we propose a language-driven scene synthesis task, which is a new task that integrates text prompts, human motion, and existing objects for scene synthesis. Unlike other single-condition synthesis tasks, our problem involves multiple conditions and requires a strategy for processing and encoding them into a unified space. To address the challenge, we present a multi-conditional diffusion model, which differs from the implicit unification approach of other diffusion literature by explicitly predicting the guiding points for the original data distribution. We demonstrate that our approach is theoretically supportive. The intensive experiment results illustrate that our method outperforms state-of-the-art benchmarks and enables natural scene editing applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section" id="acknowledgements">
+  <div class="container content is-max-desktop">
+    <h2 class="title">Acknowledgements</h2>
+    <p>We borrow github page from <a href="https://hypernerf.github.io/">HyperNeRF</a>. Special thanks to them!
+  </div>
+</section>
+
+<script type="text/javascript" src="./static/slick/slick.min.js"></script>
+</body>
+</html>
